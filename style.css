@@ -2,7 +2,7 @@
 body{
     margin: 0;
     background-size: cover;   
-    background: black;
+    background: #021737;
 }
 
 /* Loader */
@@ -194,55 +194,7 @@ header {
   95% { color: #bf053d;}
 }
 
-/* Tools */
-.tools{
-  background: transparent;
-  color: #e6eef8;
-  font-size: 1rem;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 170px;
-  animation: bounce 2s infinite;
-}
 
-@keyframes bounce{
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-.tools-grid{
-  display: grid;
-  margin-top: 100px;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 2rem;
-  justify-items: center;
-}
-
-.tool{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.tool i{
-  font-size: 3.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.tool span{
-  font-size: 0.95rem;
-  color: #d1d9ed;
-}
-
-.tool:hover{
-  transform: translateY(-8px) scale(1.05);
-  color: #7dd3fc;
-}
 
 /* --- About section --- */
 #About{
@@ -298,90 +250,6 @@ header {
 }
 
 #philosophy:hover {
-  transform: translateY(-5px);
-}
-
-#approach {
-  max-width: 900px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
-}
-
-#approach:hover {
-  transform: translateY(-5px);
-}
-
-#student-support {
-  max-width: 900px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
-}
-
-#student-support:hover {
-  transform: translateY(-5px);
-}
-
-#assessment {
-  max-width: 900px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
-}
-
-#assessment:hover {
-  transform: translateY(-5px);
-}
-
-#assessment ul {
-  padding-left: 1.5rem;
-}
-
-#assessment ul li {
-  margin-bottom: 0.8rem;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#reflection {
-  max-width: 900px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
-}
-
-#reflection:hover {
-  transform: translateY(-5px);
-}
-
-#professional-development {
-  max-width: 900px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
-}
-
-#professional-development:hover {
   transform: translateY(-5px);
 }
 
@@ -515,55 +383,6 @@ section#project h1{
   color: grey;
 }
 
-/* --- Skills --- */
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 1rem;
-}
-
-.skill {
-  background: #fc7725;
-  color: #fff;
-  padding: 0.6rem 1rem;
-  border-radius: 25px;
-  font-weight: 500;
-  transition: all 0.3s;
-}
-
-.skill:hover {
-  background: burlywood;
-  transform: scale(1.05);
-}
-
-.timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.timeline-item {
-  position: relative;
-  padding-left: 2rem;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 5px;
-  width: 10px;
-  height: 10px;
-  background: #2575fc;
-  border-radius: 50%;
-}
-
-.timeline-item h3 {
-  margin-bottom: 0.2rem;
-  color: #2575fc;
-}
-
 /* Technical skills */
 .technical-skills {
   background: #000;
@@ -613,59 +432,6 @@ section#project h1{
 @keyframes scroll {
   from {transform: translateX(0);}
   to {transform: translateX(-50%);}
-}
-
-/* Education */
-.education {
-  background: #000;
-  color: #fff;
-  padding: 60px 20px;
-}
-.education h2 {
-  text-align: center;
-  font-size: 3.2rem;
-  color: burlywood;
-  margin-bottom: 40px;
-}
-
-.education h3 {
-  text-align: center;
-}
-.education-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  max-width: 800px;
-  margin: auto;
-}
-.education-list li {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background: rgba(255,255,255,0.05);
-  padding: 15px 20px;
-  border-radius: 12px;
-  transition: transform 0.3s, background 0.3s;
-}
-.education-list li:hover {
-  transform: translateY(-5px);
-  background: rgba(0,188,212,0.1);
-}
-.education-list img {
-  width: 60px;
-  height: 60px;
-  border-radius: 8px;
-}
-.education-list h3 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: burlywood;
-}
-.education-list p {
-  margin: 2px 0 0;
-  color: #ccc;
-  font-size: 1.3rem;
 }
 
 /* --- Contact Form --- */
@@ -779,5 +545,4 @@ button:hover{
   .footer-container {
     flex-direction: column;
   }
-
 }
