@@ -1,4 +1,4 @@
-// Loading screen //
+// Loader //
 window.addEventListener("load", function() {
   const loader = document.getElementById("loader");
   const content = document.getElementById("content");
@@ -26,8 +26,8 @@ cards.forEach(card => {
   observer.observe(card);
 });
 
- // Typing Effect
-    const texts = ["Educational Technology", "Learning Interface Development", "EdTech Enthusiasm"];
+// Typing Effect
+    const texts = ["Educational Technology", "Learning Interface Development", "Frontend Development"];
     let count = 0;
     let index = 0;
     let currentText = '';
